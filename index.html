@@ -5,33 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Niloy Dey | Portfolio</title>
 <meta name="description" content="Niloy Dey - Computer Science graduate from RUET. Machine learning and full-stack developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="layout">
-
-  <!-- ============ Sidebar ============ -->
-  <aside class="sidebar">
-    <div class="avatar">ND</div>
-    <h1>Niloy Dey</h1>
-    <p class="tagline">CSE Graduate, RUET<br>Machine Learning &amp; Full-Stack Developer</p>
-    <p class="location">Dhaka, Bangladesh</p>
-
-    <div class="social-links">
-      <a href="mailto:niloydev59@gmail.com">Email</a>
-      <a href="https://github.com/Niloydey59" target="_blank" rel="noopener">GitHub</a>
-    </div>
-
-    <a class="btn-cv" href="assets/Niloy_Dey_CV.pdf" target="_blank" rel="noopener">View CV</a>
-
+<!-- ============ Top navbar ============ -->
+<header class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="#top">Niloy</a>
     <nav>
-      <a href="#about">About</a>
+      <a href="#about" class="active">About</a>
       <a href="#thesis">Thesis</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#news">News</a>
+      <a href="assets/Niloy_Dey_CV.pdf" target="_blank" rel="noopener">CV</a>
     </nav>
+  </div>
+</header>
+
+<div class="layout" id="top">
+
+  <!-- ============ Profile card ============ -->
+  <aside class="sidebar">
+    <div class="avatar">ND</div>
+    <h1>Niloy Dey</h1>
+    <p class="tagline">CSE Graduate, RUET<br>Machine Learning &amp; Full-Stack Developer</p>
+
+    <ul class="contact-list">
+      <li>&#128205; Dhaka, Bangladesh</li>
+      <li>&#9993; <a href="mailto:niloydev59@gmail.com">Email</a></li>
+      <li>&#128187; <a href="https://github.com/Niloydey59" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+
+    <a class="btn-cv" href="assets/Niloy_Dey_CV.pdf" target="_blank" rel="noopener">View CV</a>
   </aside>
 
   <!-- ============ Main content ============ -->
@@ -41,39 +51,43 @@
       <h1>Hi, I'm Niloy!</h1>
       <p class="subtitle">Computer Science graduate from RUET &middot; building data-driven ML systems and full-stack web applications.</p>
 
-      <h2>About</h2>
-      <p>
-        My interests lie at the intersection of <strong>machine learning</strong>,
-        <strong>natural language processing</strong>, and <strong>full-stack software
-        engineering</strong>. During my undergraduate studies at RUET, I built a structured,
-        clinically-validated dataset and ML pipeline for medical specialty routing from
-        doctor&ndash;patient consultations, and evaluated it through model comparison and
-        feature-ablation studies.
-      </p>
+      <div class="highlight-card">
+        <h2>About</h2>
+        <p>
+          My interests lie at the intersection of <strong>machine learning</strong>,
+          <strong>natural language processing</strong>, and <strong>full-stack software
+          engineering</strong>. During my undergraduate studies at RUET, I built a structured,
+          clinically-validated dataset and ML pipeline for medical specialty routing from
+          doctor&ndash;patient consultations, and evaluated it through model comparison and
+          feature-ablation studies.
+        </p>
+      </div>
 
-      <h2>Beyond the Thesis</h2>
-      <p>
-        My undergraduate journey went beyond coursework and research. I contributed as a
-        frontend and backend developer on <strong>Khobor</strong>, a bite-sized news app that
-        reached the Top&nbsp;10 at the bdapps Innovation Summit 2025, and I am currently
-        co-building <strong>Nibedito</strong>, a full-stack gift e-commerce platform, as a
-        two-person team.
-      </p>
+      <div class="highlight-card">
+        <h2>Beyond the Thesis</h2>
+        <p>
+          My undergraduate journey went beyond coursework and research. I contributed as a
+          frontend and backend developer on <strong>Khobor</strong>, a bite-sized news app that
+          reached the Top&nbsp;10 at the bdapps Innovation Summit 2025, and I am currently
+          co-building <strong>Nibedito</strong>, a full-stack gift e-commerce platform, as a
+          two-person team.
+        </p>
+      </div>
 
-      <div class="stats">
-        <div class="stat-tile">
+      <div class="stats-row">
+        <div class="stat">
           <div class="value">3.74 / 4.00</div>
           <div class="label">CGPA</div>
         </div>
-        <div class="stat-tile">
+        <div class="stat">
           <div class="value">4 Years</div>
           <div class="label">Merit Scholarship</div>
         </div>
-        <div class="stat-tile">
+        <div class="stat">
           <div class="value">Top 10</div>
-          <div class="label">bdapps Innovation Summit 2025</div>
+          <div class="label">bdapps Innovation Summit</div>
         </div>
-        <div class="stat-tile">
+        <div class="stat">
           <div class="value">3</div>
           <div class="label">Major Projects</div>
         </div>
