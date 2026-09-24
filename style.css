@@ -1,7 +1,7 @@
 :root {
-  --accent: #7a1f2b;
-  --accent-light: #9c3040;
-  --accent-tint: #fbeef0;
+  --accent: #1c4e80;
+  --accent-light: #2f6ba8;
+  --accent-tint: #eaf1fa;
   --bg: #f7f8fb;
   --panel: #ffffff;
   --text: #1f2430;
@@ -120,6 +120,12 @@ h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; }
 .contact-list li {
   margin-bottom: 8px;
   color: var(--text-muted);
+}
+.contact-list li i {
+  width: 16px;
+  text-align: center;
+  color: var(--accent);
+  margin-right: 4px;
 }
 
 .btn-cv {
