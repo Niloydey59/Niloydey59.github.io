@@ -277,6 +277,16 @@ section > h2 {
   margin-bottom: 10px;
 }
 .card p { margin: 0 0 8px; }
+.card ul { margin: 0; padding-left: 20px; }
+.card li { margin-bottom: 6px; }
+
+.skill-group { margin-bottom: 18px; }
+.skill-group h3 {
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+}
 .card .tech {
   font-size: 0.85rem;
   color: var(--text-muted);
