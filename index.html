@@ -7,18 +7,18 @@
 <meta name="description" content="Niloy Dey - Computer Science graduate from RUET. Machine learning and full-stack developer.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- ============ Top navbar ============ -->
 <header class="topnav">
   <div class="topnav-inner">
     <a class="brand" href="#top">Niloy</a>
-    <nav>
-      <a href="#about" class="active">About</a>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
       <a href="#thesis">Thesis</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -31,218 +31,178 @@
 
 <div class="layout" id="top">
 
-  <!-- ============ Profile card ============ -->
-  <aside class="sidebar">
-    <img class="avatar" src="assets/images/niloy.jpg" alt="Niloy Dey">
-    <h1>Niloy Dey</h1>
+  <aside class="profile">
+    <img class="avatar" src="assets/images/niloy.jpg" alt="Portrait of Niloy Dey" width="459" height="585">
+    <p class="name">Niloy Dey</p>
     <p class="tagline">CSE Graduate, RUET<br>Machine Learning &amp; Full-Stack Developer</p>
 
     <ul class="contact-list">
-      <li><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</li>
-      <li><i class="fa-solid fa-envelope"></i> <a href="mailto:niloydev59@gmail.com">Email</a></li>
-      <li><i class="fa-brands fa-github"></i> <a href="https://github.com/Niloydey59" target="_blank" rel="noopener">GitHub</a></li>
+      <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Dhaka, Bangladesh</li>
+      <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:niloydev59@gmail.com">Email</a></li>
+      <li><i class="fa-brands fa-github" aria-hidden="true"></i> <a href="https://github.com/Niloydey59" target="_blank" rel="noopener">GitHub</a></li>
     </ul>
 
     <a class="btn-cv" href="assets/Niloy_Dey_CV.pdf" target="_blank" rel="noopener">View CV</a>
   </aside>
 
-  <!-- ============ Main content ============ -->
-  <main>
+  <main id="main">
 
-    <section class="hero" id="about">
+    <section id="about">
       <h1>Hi, I'm Niloy!</h1>
-      <p class="subtitle">Computer Science graduate from RUET &middot; building data-driven ML systems and full-stack web applications.</p>
-
-      <div class="highlight-card">
-        <h2>About</h2>
-        <p>
-          My interests lie at the intersection of <strong>machine learning</strong>,
-          <strong>natural language processing</strong>, and <strong>full-stack software
-          engineering</strong>. During my undergraduate studies at RUET, I built a structured,
-          clinically-validated dataset and ML pipeline for medical specialty routing from
-          doctor&ndash;patient consultations, and evaluated it through model comparison and
-          feature-ablation studies.
-        </p>
-      </div>
-
-      <div class="highlight-card">
-        <h2>Beyond the Thesis</h2>
-        <p>
-          My undergraduate journey went beyond coursework and research. I contributed as a
-          frontend and backend developer on <strong>Khobor</strong>, a bite-sized news app that
-          reached the Top&nbsp;10 at the bdapps Innovation Summit 2025, and I am currently
-          co-building <strong>Nibedito</strong>, a full-stack gift e-commerce platform, as a
-          two-person team.
-        </p>
-      </div>
-
-      <div class="stats-row">
-        <div class="stat">
-          <div class="value">3.74 / 4.00</div>
-          <div class="label">CGPA</div>
-        </div>
-        <div class="stat">
-          <div class="value">4 Years</div>
-          <div class="label">Merit Scholarship</div>
-        </div>
-        <div class="stat">
-          <div class="value">Top 10</div>
-          <div class="label">bdapps Innovation Summit</div>
-        </div>
-      </div>
+      <p class="lede">Computer Science graduate from RUET, building data-driven ML systems and full-stack web applications.</p>
+      <p>
+        My interests lie at the intersection of machine learning, natural language processing, and
+        full-stack software engineering. During my undergraduate studies at RUET, I built a
+        structured, clinically-validated dataset and ML pipeline for medical specialty routing from
+        doctor&ndash;patient consultations, and evaluated it through model comparison and
+        feature-ablation studies.
+      </p>
+      <p>
+        My undergraduate journey went beyond coursework and research. I contributed as a frontend
+        and backend developer on Khobor, a bite-sized news app that reached the Top&nbsp;10 at the
+        bdapps Innovation Summit 2025, and I am currently co-building Nibedito, a full-stack gift
+        e-commerce platform, as a two-person team.
+      </p>
+      <p class="facts">
+        I graduated from RUET with a CGPA of 3.74/4.00, held the Technical Merit Scholarship in all
+        four years, and reached the Top&nbsp;10 at the bdapps Innovation Summit 2025 with the
+        Khobor team.
+      </p>
     </section>
 
     <section id="thesis">
-      <h2>Undergraduate Thesis</h2>
-      <div class="card">
-        <h3>A Structured, Clinically-Validated Dataset for Medical Specialty Routing from Doctor&ndash;Patient Consultations</h3>
-        <div class="meta">B.Sc. Thesis &middot; RUET &middot; 2025 &ndash; 2026 &middot; Supervisor:
-          <a href="https://ruet.ac.bd/khaledruet26" target="_blank" rel="noopener">Khaled Zinnurine</a>,
-          Lecturer, Department of CSE, RUET</div>
-        <p>
-          Built a patient-level dataset of about 30,500 real doctor&ndash;patient consultations
-          (MedDialog corpus) for medical specialty routing, with a 13-specialty taxonomy derived
-          empirically from 24 candidate classes. Designed an LLM-based pipeline (GPT-4.1-mini)
-          with checkpointed stages for specialty classification, structured symptom extraction
-          onto a controlled 105-term vocabulary, and severity and duration normalization.
-          Validated the extracted data through clinician review of a stratified sample, measured
-          with agreement statistics (Cohen's kappa, PABAK), and benchmarked 7 models with a
-          feature-ablation study.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, pandas, scikit-learn, Keras/TensorFlow, OpenAI API, Jupyter</p>
-      </div>
+      <h2>Undergraduate thesis</h2>
+      <h3 class="thesis-title">A Structured, Clinically-Validated Dataset for Medical Specialty Routing from Doctor&ndash;Patient Consultations</h3>
+      <p class="byline">B.Sc. thesis, RUET, 2025&ndash;2026</p>
+      <p class="byline">Supervisor:
+        <a href="https://ruet.ac.bd/khaledruet26" target="_blank" rel="noopener">Khaled Zinnurine</a>,
+        Lecturer, Department of CSE, RUET</p>
+      <p>
+        Built a patient-level dataset of about 30,500 real doctor&ndash;patient consultations
+        (MedDialog corpus) for medical specialty routing, with a 13-specialty taxonomy derived
+        empirically from 24 candidate classes. Designed an LLM-based pipeline (GPT-4.1-mini)
+        with checkpointed stages for specialty classification, structured symptom extraction
+        onto a controlled 105-term vocabulary, and severity and duration normalization.
+        Validated the extracted data through clinician review of a stratified sample, measured
+        with agreement statistics (Cohen's kappa, PABAK), and benchmarked 7 models with a
+        feature-ablation study.
+      </p>
+      <p class="tech"><span>Tech</span> Python, pandas, scikit-learn, Keras/TensorFlow, OpenAI API, Jupyter</p>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
 
-      <div class="card">
-        <h3>Barta Limited &mdash; Khobor: Swipe &amp; Scroll</h3>
-        <div class="meta">Developer (Frontend &amp; Backend) &middot; Bangladesh &middot; Feb 2025 &ndash; Present</div>
-        <ul>
-          <li>Contributed to a six-member cross-functional team developing Khobor, Bangladesh's first bite-sized, swipeable news application.</li>
-          <li>Developed and maintained the platform's public website (<a href="https://thekhobor.com" target="_blank" rel="noopener">thekhobor.com</a>) using Next.js, TypeScript and Tailwind CSS, delivering a responsive, mobile-first experience with analytics event tracking.</li>
-          <li>Developed backend REST APIs (Express, TypeScript, PostgreSQL) for news-source following and administrator-managed trending searches, including schema migrations and request validation.</li>
-          <li>Built the trending-search administration interface in the Vue 3 back-office and maintained the corresponding API collection for documentation and testing.</li>
-        </ul>
-      </div>
+      <article class="entry">
+        <p class="when">Feb 2025 &ndash; Present</p>
+        <div class="what">
+          <h3>Khobor: Swipe &amp; Scroll</h3>
+          <p class="role">Developer (Frontend &amp; Backend), Barta Limited, Bangladesh</p>
+          <ul>
+            <li>Contributed to a six-member cross-functional team developing Khobor, Bangladesh's first bite-sized, swipeable news application.</li>
+            <li>Developed and maintained the platform's public website (<a href="https://thekhobor.com" target="_blank" rel="noopener">thekhobor.com</a>) using Next.js, TypeScript and Tailwind CSS, delivering a responsive, mobile-first experience with analytics event tracking.</li>
+            <li>Developed backend REST APIs (Express, TypeScript, PostgreSQL) for news-source following and administrator-managed trending searches, including schema migrations and request validation.</li>
+            <li>Built the trending-search administration interface in the Vue 3 back-office and maintained the corresponding API collection for documentation and testing.</li>
+          </ul>
+        </div>
+      </article>
 
-      <div class="card">
-        <h3>Ultimate IT Solutions</h3>
-        <div class="meta">Frontend Developer &middot; Remote &middot; May 2025 &ndash; Apr 2026</div>
-        <ul>
-          <li>Developed the frontend of CoreTutor, an online learning and assessment platform (Next.js, TypeScript, Tailwind CSS), through a year of continuous delivery.</li>
-          <li>Built the assessment system (MCQ and passage-based tests, results, administrative review and grading) and the administrative dashboard for content, events and notices.</li>
-          <li>Redesigned the student results module, consolidating more than 20 files into a unified interface with progress analytics.</li>
-          <li>Implemented cart, checkout and a class-credits system, and collaborated with the backend developer on system and API design, advising on redesigns that resolved recurring integration issues.</li>
-        </ul>
-      </div>
+      <article class="entry">
+        <p class="when">May 2025 &ndash; Apr 2026</p>
+        <div class="what">
+          <h3>Ultimate IT Solutions</h3>
+          <p class="role">Frontend Developer, remote</p>
+          <ul>
+            <li>Developed the frontend of CoreTutor, an online learning and assessment platform (Next.js, TypeScript, Tailwind CSS), through a year of continuous delivery.</li>
+            <li>Built the assessment system (MCQ and passage-based tests, results, administrative review and grading) and the administrative dashboard for content, events and notices.</li>
+            <li>Redesigned the student results module, consolidating more than 20 files into a unified interface with progress analytics.</li>
+            <li>Implemented cart, checkout and a class-credits system, and collaborated with the backend developer on system and API design, advising on redesigns that resolved recurring integration issues.</li>
+          </ul>
+        </div>
+      </article>
 
-      <div class="card">
-        <h3>Ultimate IT Solutions</h3>
-        <div class="meta">Industrial Attachment &middot; Chattogram, Bangladesh &middot; Mar 2025 &ndash; Apr 2025</div>
-        <ul>
-          <li>Developed an internal company networking portal (Next.js, TypeScript) enabling employees to maintain profiles, share announcements and upload photos.</li>
-          <li>Designed and implemented the user-facing application: landing page, profile creation and editing with form validation, a personal dashboard, and a filterable member directory.</li>
-          <li>Designed and implemented the administrative side: admin login, a management dashboard, a notice board with an approval workflow, and photo gallery management. Iterated on a second version to resolve profile-validation and upload defects.</li>
-        </ul>
-      </div>
+      <article class="entry">
+        <p class="when">Mar 2025 &ndash; Apr 2025</p>
+        <div class="what">
+          <h3>Ultimate IT Solutions</h3>
+          <p class="role">Industrial Attachment, Chattogram, Bangladesh</p>
+          <ul>
+            <li>Developed an internal company networking portal (Next.js, TypeScript) enabling employees to maintain profiles, share announcements and upload photos.</li>
+            <li>Designed and implemented the user-facing application: landing page, profile creation and editing with form validation, a personal dashboard, and a filterable member directory.</li>
+            <li>Designed and implemented the administrative side: admin login, a management dashboard, a notice board with an approval workflow, and photo gallery management. Iterated on a second version to resolve profile-validation and upload defects.</li>
+          </ul>
+        </div>
+      </article>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
 
-      <div class="card">
-        <h3>Nibedito &mdash; Gift E-commerce Platform</h3>
-        <div class="meta">Full-Stack Developer &middot; Two-member team &middot; Jan 2025 &ndash; Present &middot;
-          <a href="https://nibedito.com" target="_blank" rel="noopener">nibedito.com</a></div>
-        <p>
-          Full-stack e-commerce platform for curated gifts, built in a two-member team. It covers
-          the customer storefront, user and administrator dashboards, a variant-aware cart,
-          wishlist, a banner-managed homepage and a product review system with image uploads and
-          moderation. I designed and implemented the REST APIs, with JWT authentication, request
-          validation and Cloudinary image management.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Next.js, React, TypeScript, Tailwind CSS, Express.js, MongoDB, Cloudinary</p>
-      </div>
+      <article class="entry">
+        <p class="when">Jan 2025 &ndash; Present</p>
+        <div class="what">
+          <h3>Nibedito: Gift E-commerce Platform</h3>
+          <p class="role">Full-Stack Developer, two-member team. <a href="https://nibedito.com" target="_blank" rel="noopener">nibedito.com</a></p>
+          <p>
+            Full-stack e-commerce platform for curated gifts, built in a two-member team. It covers
+            the customer storefront, user and administrator dashboards, a variant-aware cart,
+            wishlist, a banner-managed homepage and a product review system with image uploads and
+            moderation. I designed and implemented the REST APIs, with JWT authentication, request
+            validation and Cloudinary image management.
+          </p>
+          <p class="tech"><span>Tech</span> Next.js, React, TypeScript, Tailwind CSS, Express.js, MongoDB, Cloudinary</p>
+        </div>
+      </article>
 
-      <div class="card">
-        <h3>Data Mining Project: Player Rank Prediction</h3>
-        <div class="meta">Individual project &middot; Oct 2025</div>
-        <p>
-          Built a custom dataset of about 1,700 player records and 33 features with a rate-limited
-          web scraper, then engineered features, selected 9 of 30 by chi-square and correlation
-          analysis, and compared 8 classification models with stratified cross-validation.
-        </p>
-        <p class="tech"><strong>Tech:</strong> Python, pandas, scikit-learn, XGBoost, LightGBM, CatBoost, Node.js, Puppeteer</p>
-      </div>
+      <article class="entry">
+        <p class="when">Oct 2025</p>
+        <div class="what">
+          <h3>Data Mining Project: Player Rank Prediction</h3>
+          <p class="role">Individual project</p>
+          <p>
+            Built a custom dataset of about 1,700 player records and 33 features with a rate-limited
+            web scraper, then engineered features, selected 9 of 30 by chi-square and correlation
+            analysis, and compared 8 classification models with stratified cross-validation.
+          </p>
+          <p class="tech"><span>Tech</span> Python, pandas, scikit-learn, XGBoost, LightGBM, CatBoost, Node.js, Puppeteer</p>
+        </div>
+      </article>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
-      <div class="skill-group">
-        <h3>Programming Languages</h3>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">C++</span>
-          <span class="tag">SQL</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">TypeScript</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Machine Learning &amp; Data</h3>
-        <div class="tags">
-          <span class="tag">scikit-learn</span>
-          <span class="tag">TensorFlow / Keras</span>
-          <span class="tag">pandas</span>
-          <span class="tag">NumPy</span>
-          <span class="tag">LLM-based data pipelines</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Web &amp; Backend</h3>
-        <div class="tags">
-          <span class="tag">Next.js</span>
-          <span class="tag">React</span>
-          <span class="tag">Express.js</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">MongoDB</span>
-        </div>
-      </div>
-      <div class="skill-group">
-        <h3>Tools &amp; Platforms</h3>
-        <div class="tags">
-          <span class="tag">Git</span>
-          <span class="tag">Jupyter</span>
-          <span class="tag">Linux</span>
-          <span class="tag">Docker (basic)</span>
-        </div>
-      </div>
+      <dl class="skills">
+        <dt>Programming languages</dt>
+        <dd>Python, C++, SQL, JavaScript, TypeScript</dd>
+        <dt>Machine learning and data</dt>
+        <dd>scikit-learn, TensorFlow/Keras, pandas, NumPy, LLM-based data pipelines</dd>
+        <dt>Web and backend</dt>
+        <dd>Next.js, React, Express.js, Node.js, MongoDB</dd>
+        <dt>Tools and platforms</dt>
+        <dd>Git, Jupyter, Linux, Docker (basic)</dd>
+      </dl>
     </section>
 
     <section id="news">
       <h2>News</h2>
-      <ul class="timeline">
-        <li>
-          <span class="tag-new">New</span><span class="date">[2026]</span><br>
-          Completed my B.Sc. in Computer Science and Engineering from RUET with a CGPA of 3.74/4.00.
-        </li>
-        <li>
-          <span class="tag-new">New</span><span class="date">[2025 &ndash; 2026]</span><br>
-          Completed my undergraduate thesis: <em>A Structured, Clinically-Validated Dataset for
-          Medical Specialty Routing from Doctor&ndash;Patient Consultations</em>.
-        </li>
-        <li>
-          <span class="date">[2025]</span><br>
-          Reached the Top 10 at the bdapps Innovation Summit 2025 as part of the Khobor team.
-        </li>
-        <li>
-          <span class="date">[Sep 2026]</span><br>
-          Nibedito, a full-stack gift e-commerce platform built with a teammate, went live at
-          <a href="https://nibedito.com" target="_blank" rel="noopener">nibedito.com</a>.
-        </li>
-      </ul>
+      <div class="entry">
+        <p class="when">Sep 2026</p>
+        <p class="what">Nibedito, a full-stack gift e-commerce platform built with a teammate, went live at
+          <a href="https://nibedito.com" target="_blank" rel="noopener">nibedito.com</a>.</p>
+      </div>
+      <div class="entry">
+        <p class="when">2026</p>
+        <p class="what">Completed my B.Sc. in Computer Science and Engineering from RUET with a CGPA of 3.74/4.00.</p>
+      </div>
+      <div class="entry">
+        <p class="when">2025 &ndash; 2026</p>
+        <p class="what">Completed my undergraduate thesis: <em>A Structured, Clinically-Validated Dataset for
+          Medical Specialty Routing from Doctor&ndash;Patient Consultations</em>.</p>
+      </div>
+      <div class="entry">
+        <p class="when">2025</p>
+        <p class="what">Reached the Top 10 at the bdapps Innovation Summit 2025 as part of the Khobor team.</p>
+      </div>
     </section>
 
   </main>
@@ -250,5 +210,23 @@
 
 <footer>&copy; 2026 Niloy Dey</footer>
 
+<script>
+(function () {
+  var links = document.querySelectorAll('.topnav nav a[href^="#"]');
+  var map = {};
+  links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+  var sections = document.querySelectorAll('main section');
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting && map[e.target.id]) {
+        links.forEach(function (a) { a.removeAttribute('aria-current'); });
+        map[e.target.id].setAttribute('aria-current', 'true');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(function (s) { io.observe(s); });
+})();
+</script>
 </body>
 </html>
