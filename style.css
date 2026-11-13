@@ -295,20 +295,34 @@ p { margin: 0 0 14px; }
   padding: 4px 11px;
 }
 
-/* ---------- Skills (hairline table) ---------- */
+/* ---------- Skills (hairline table with pills) ---------- */
 .skills {
   display: grid;
-  grid-template-columns: 11rem 1fr;
+  grid-template-columns: 13rem 1fr;
   margin: 0;
-  border-bottom: 1px solid var(--rule);
 }
 .skills dt, .skills dd {
   margin: 0;
-  padding: 13px 0;
+  padding: 15px 0;
   border-top: 1px solid var(--rule);
 }
-.skills dt { font-family: var(--sans); font-weight: 600; font-size: 0.95rem; }
-.skills dd { color: var(--slate); }
+.skills dt {
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding-right: 16px;
+}
+.skills dd { display: flex; flex-wrap: wrap; gap: 8px; align-content: flex-start; }
+.skills dd span {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--accent-deep);
+  background: color-mix(in srgb, var(--accent) 10%, #fff);
+  border-radius: 999px;
+  padding: 5px 12px;
+}
 
 /* ---------- Awards, education, news ---------- */
 .plain-list, .news-list { margin: 0; padding: 0; list-style: none; }
@@ -374,6 +388,6 @@ footer {
   .stack dd { margin-bottom: 8px; }
   .skills { grid-template-columns: 1fr; }
   .skills dt { border-top: 1px solid var(--rule); padding-bottom: 0; }
-  .skills dd { border-top: none; padding-top: 2px; }
+  .skills dd { border-top: none; padding-top: 2px; padding-bottom: 14px; }
   footer { padding: 16px 20px 40px; }
 }
