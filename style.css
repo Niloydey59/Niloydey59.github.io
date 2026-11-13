@@ -187,8 +187,29 @@ h3 { font-size: 1.05rem; line-height: 1.35; margin: 0 0 2px; }
 p { margin: 0 0 14px; }
 
 .lede { font-size: 1.15rem; color: var(--slate); margin-bottom: 22px; }
-.facts { border-left: 3px solid var(--tint); padding-left: 14px; }
-.facts { color: var(--slate); }
+
+/* ---------- Stats row ---------- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 28px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.stat .value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--accent);
+}
+.stat .label {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--slate);
+  margin-top: 2px;
+}
 
 /* ---------- Thesis (the one emphasised block) ---------- */
 #thesis {
@@ -241,24 +262,37 @@ p { margin: 0 0 14px; }
 
 
 
-/* ---------- Technology chips ---------- */
-.chips {
-  list-style: none;
-  margin: 12px 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+/* ---------- Technology stack ---------- */
+.stack { margin-top: 18px; padding-top: 12px; border-top: 1px solid color-mix(in srgb, var(--accent) 22%, var(--rule)); }
+.stack-title {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  margin: 0 0 8px;
 }
-.chips li {
+.stack dl {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  gap: 8px 12px;
+  margin: 0;
+  align-items: baseline;
+}
+.stack dt {
   font-family: var(--sans);
   font-size: 0.82rem;
+  color: var(--slate);
+}
+.stack dd { margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.stack dd span {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
   line-height: 1.2;
-  color: var(--ink);
-  background: #fff;
-  border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--rule));
-  border-radius: 3px;
-  padding: 5px 10px;
+  color: var(--accent-deep);
+  background: color-mix(in srgb, var(--accent) 10%, #fff);
+  border-radius: 999px;
+  padding: 4px 11px;
 }
 
 /* ---------- Skills (hairline table) ---------- */
@@ -335,6 +369,9 @@ footer {
   h1 { font-size: 1.9rem; }
   .thesis-title { font-size: 1.35rem; }
   .entry { grid-template-columns: 1fr; gap: 2px; }
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .stack dl { grid-template-columns: 1fr; gap: 2px; }
+  .stack dd { margin-bottom: 8px; }
   .skills { grid-template-columns: 1fr; }
   .skills dt { border-top: 1px solid var(--rule); padding-bottom: 0; }
   .skills dd { border-top: none; padding-top: 2px; }
